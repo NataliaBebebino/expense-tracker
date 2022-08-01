@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState(""); // we are stating the initial state as string because everything that is written in the input is initially stored as string by default, no matter it's content
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -26,6 +26,8 @@ const ExpenseForm = () => {
       amount: enteredAmount,
       date: new Date(enteredDate), // we write new Date so that it parses the enteredDate and formats it correctly
     };
+
+    props.onSaveExpenseData(expenseData);
 
     setEnteredTitle("");
     setEnteredAmount("");
