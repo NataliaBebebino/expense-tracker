@@ -1,3 +1,12 @@
+# Info about this project
+
+This project was built following the instructions from a React course delivered by Academind - Maximilian Schwarzmüller. 
+It consists of an expense tracker where you can add expenses with their amount and their date, and filter the list of expenses by year in order to visualize them on the screen. 
+Along this course we learnt the basics of JSX, React components, passing data from a parent component to a child component through props, passing data upwards (from a child component to a parent component), passing data between two components that are not directly related and we gained an overview on useState hook.
+We focused on the React portion of the project, being given the CSS directly and only having to apply the classes already defined. 
+Below you will find all the boilerplate text from Create React App.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
